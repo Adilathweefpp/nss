@@ -155,6 +155,14 @@ class _LoginScreenState extends State<LoginScreen> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   // Logo and Header
+                  // Image.asset(
+                  //   'assets/images/nss_logo.png',
+                  //   height: 80,
+                  //   width: 80,
+                  //   fit: BoxFit.contain,
+                  // ),
+                  
+                  // Logo and Header
                   const Icon(
                     Icons.volunteer_activism,
                     size: 80,

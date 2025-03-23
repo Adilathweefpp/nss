@@ -5,13 +5,14 @@ import 'package:nss_app/screens/auth/login_screen.dart';
 import 'package:nss_app/services/ApprovalService.dart';
 import 'package:nss_app/services/admin_manage_service.dart';
 import 'package:nss_app/services/admin_profile_service.dart';
+import 'package:nss_app/services/attendance_service.dart';
 import 'package:nss_app/services/event_service.dart';
 import 'package:nss_app/services/profile_service.dart';
 import 'package:nss_app/services/signup_service.dart';
 import 'package:nss_app/services/volunteer_manage_service.dart';
 import 'package:nss_app/theme.dart';
 import 'package:provider/provider.dart';
-import 'package:nss_app/services/auth_service.dart'; // Add this import
+import 'package:nss_app/services/auth_service.dart'; 
 import 'firebase_options.dart';
 
 void main() async {
@@ -36,7 +37,9 @@ class NSSApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => AdminProfileService()),
         ChangeNotifierProvider(create: (_) => EventService()),
         ChangeNotifierProvider(create: (_) => AdminManageService()),
-        ChangeNotifierProvider(create: (_) => VolunteerManageService()), 
+        ChangeNotifierProvider(create: (_) => VolunteerManageService()),
+        ChangeNotifierProvider(create: (_) => AttendanceService()),
+
 
 
       ],
