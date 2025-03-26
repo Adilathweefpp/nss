@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:nss_app/screens/admin/admin_feedback_screen.dart';
 import 'package:nss_app/screens/admin/event_management/edit_event_screen.dart';
+import 'package:nss_app/screens/admin/event_management/mark_points_screen.dart';
 import 'package:nss_app/screens/auth/admin_login.dart';
 
 // Auth Screens
 import 'package:nss_app/screens/auth/login_screen.dart';
 import 'package:nss_app/screens/auth/pending_approval_screen.dart';
 import 'package:nss_app/screens/auth/signup_screen.dart';
+import 'package:nss_app/screens/volunteer/VolunteerPointsDetailsScreen.dart';
 
 // Volunteer Screens
 import 'package:nss_app/screens/volunteer/volunteer_dashboard.dart';
@@ -42,9 +45,12 @@ final Map<String, WidgetBuilder> routes = {
   '/volunteer/events': (context) => const VolunteerEventListScreen(),
   '/volunteer/event-details': (context) => const VolunteerEventDetailsScreen(),
   '/volunteer/attendance': (context) => const AttendanceStatusScreen(),
+  '/volunteer/points-details': (context) => const VolunteerPointsDetailsScreen(),
+
   
   // Admin Routes
   '/admin/dashboard': (context) => const AdminDashboard(),
+  '/admin/feedback': (context) => const AdminFeedbackScreen(),
   '/admin/profile': (context) => const AdminProfileScreen(),
   '/admin/volunteers': (context) => const VolunteerListScreen(),
   '/admin/volunteer-details': (context) => const VolunteerDetailsScreen(),
@@ -56,4 +62,5 @@ final Map<String, WidgetBuilder> routes = {
   '/admin/event-details': (context) => const AdminEventDetailsScreen(),
   '/admin/add-admin': (context) => const AddAdminScreen(),
   '/admin/admins': (context) => const AdminListScreen(),
+  '/admin/mark-points': (context) => const MarkPointsScreen(),
 };
